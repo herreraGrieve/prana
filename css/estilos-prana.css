@@ -166,4 +166,105 @@ box-shadow: 0px 4px 0px 0px rgba(117,136,54,1);
 }
 
 
+/*------------------------------------
+                GLOBAL
+-------------------------------------*/
 
+.hero{
+    height: 270px;
+    margin-bottom: 90px;
+    background-image: url('/images/equipo/hero.jpg');
+    background-position: center;
+}
+
+.hero-title{
+    position: relative;
+    top: 50%;
+    padding-left: 50px;
+    font-weight: 800;
+    font-size: 55px;
+    color: white;
+    transform: translateY(-50%)
+}
+
+/*------------------------------------
+            NUESTRO EQUIPO
+-------------------------------------*/
+
+.team:after{
+    content: "";
+    display: table;
+    clear: both
+}
+
+.team{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.team img{
+    width: 100%;
+    max-width: 200px;
+}
+
+.team-col{
+    float: left;
+    width: 20%;
+    padding: 0 30px
+}
+
+.team-name{
+    min-height: 10px;
+    font-size: 17px;
+
+}
+.team-name,.team-job{
+    color: #535353
+}
+
+.team-bio{
+    font-size: 12px;
+    color: #646464
+}
+
+
+@media only screen and (max-width:780px){
+    
+    .team{
+        text-align: left
+    }
+    .team-col:after{
+        content: "";
+        display: table;
+        clear: both
+    }
+    
+    .team img{
+        float: left;
+        width: 20%
+    }
+    .team-name{
+        margin: 0
+    }
+    .team-info{
+        padding-left: 35px;
+        float: right;
+        width: 80%
+    }
+    .team-col{
+        width: 100%
+    }
+    .team-col + .team-col{
+        margin-top: 40px;
+    }
+}
+
+
+@media only screen and (max-width:480px){
+    .team-info{
+        padding-left: 25px;
+    }
+    .team-col{
+        padding: 0 20px 0 10px
+    }
+}
