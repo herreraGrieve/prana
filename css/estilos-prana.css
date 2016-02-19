@@ -173,24 +173,47 @@ box-shadow: 0px 4px 0px 0px rgba(117,136,54,1);
 .hero{
     height: 270px;
     margin-bottom: 90px;
-    background-image: url('/images/equipo/hero.jpg');
     background-position: center;
+    padding-left: 50px;
+}
+
+.hero-caption{
+    color:white;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: relative;
+    top: -8px
+}
+
+.hero-text{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)
+    
 }
 
 .hero-title{
-    position: relative;
-    top: 50%;
-    padding-left: 50px;
     font-weight: 800;
     font-size: 55px;
     color: white;
-    transform: translateY(-50%)
+}
+
+.beta{
+    font-size: 25px;
+    font-weight: 800;
+}
+.beta--green{
+    color: #9fe31f
 }
 
 /*------------------------------------
             NUESTRO EQUIPO
 -------------------------------------*/
 
+.hero-team{
+    background-image: url('/images/equipo/hero.jpg');
+
+}
 .team:after{
     content: "";
     display: table;
@@ -267,4 +290,56 @@ box-shadow: 0px 4px 0px 0px rgba(117,136,54,1);
     .team-col{
         padding: 0 20px 0 10px
     }
+}
+
+
+
+/*------------------------------------
+            QUE OFRECEMOS
+-------------------------------------*/
+.hero-services{
+    background-image: url('/images/servicios/ofrecemos.jpg');
+}
+
+
+.services-list{
+    padding:  0
+}
+
+.services-list:after{
+    content: "";
+    display: table;
+    clear: both
+}
+
+.hero-services{
+    
+}
+
+.services-list li{
+    float: left;
+    margin-top: 10px;
+}
+
+.services-section{
+    padding: 0 5%
+}
+
+.services-section + .services-section{
+    margin-top:  50px
+}
+
+.services-list li:before{
+    content: "";
+    display: inline-block;
+    margin-right: 10px;
+    width: 4px;
+    height: 4px;
+    vertical-align: middle;
+    background-color: black;
+    border-radius: 100%
+}
+
+.services-list li + li{
+    margin-left: 3%
 }
