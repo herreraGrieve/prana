@@ -173,7 +173,7 @@ box-shadow: 0px 4px 0px 0px rgba(117,136,54,1);
 .hero{
     height: 270px;
     margin-bottom: 90px;
-    background-position: center;
+    background-position: left center;
     padding-left: 50px;
     background-size: cover
 }
@@ -426,8 +426,8 @@ box-shadow: 0px 4px 0px 0px rgba(117,136,54,1);
     border-radius: 100%
 }
 
-.services-list li + li{
-    margin-left: 3%
+.services-list li{
+    margin-right: 3%
 }
 
 /*------------------------------------
@@ -574,4 +574,11 @@ box-shadow: 0px 4px 0px 0px rgba(117,136,54,1);
 .contact-links-item-title{
     font-weight: 800;
     font-size: 28px
+}
+
+/*------------------------------------
+                TALLERES
+-------------------------------------*/
+.hero-workshops{
+    background-image: url('/images/servicios/talleres.jpg')
 }
