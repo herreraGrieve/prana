@@ -582,3 +582,24 @@ box-shadow: 0px 4px 0px 0px rgba(117,136,54,1);
 .hero-workshops{
     background-image: url('/images/servicios/talleres.jpg')
 }
+
+/*------------------------------------
+                CLIENTES
+-------------------------------------*/
+
+.hero-clients{
+    background-image: url('/images/clientes/banner.jpg')
+}
+
+.clients{
+    text-align: center
+}
+.clients-text{
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 18px;
+    color: #464646
+}
+.clients-logos{
+    margin-top: 80px;
+}
