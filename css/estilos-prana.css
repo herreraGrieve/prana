@@ -207,6 +207,91 @@ box-shadow: 0px 4px 0px 0px rgba(117,136,54,1);
     color: #9fe31f
 }
 
+.button{
+    position: relative;
+    color: white;
+    font-size: 23px;
+    font-weight: 800;
+    padding: 5px 56px 5px 20px;
+    border-width: 0 0 5px 0;
+    border-style: solid;
+}
+
+.button:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 40px;
+}
+
+.button--yellow{
+    background-color: #ffce00;
+    border-color: #896f00
+}
+
+.button--yellow:before{
+    background-color: #fbba00
+}
+
+.button--green{
+    background-color: #94c11f;
+    border-color: #3d500c
+}
+
+.button--green:before{
+    background-color: #6fab27;
+}
+
+.button--icon{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 11px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.button--icon:before,.button--icon:after{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: white;
+}
+
+.button--icon:before{
+    width: 100%;
+    height: 4px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+}
+
+.button--icon:after{
+    width: 4px;
+    height: 100%;
+    top: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+
+@media only screen and (max-width:480px){
+    .hero{
+        height: 150px;
+        padding-left: 10px
+    }
+    .hero-title{
+        font-size: 35px
+    }
+}
+
+
 /*------------------------------------
             NUESTRO EQUIPO
 -------------------------------------*/
@@ -317,10 +402,6 @@ box-shadow: 0px 4px 0px 0px rgba(117,136,54,1);
     clear: both
 }
 
-.hero-services{
-    
-}
-
 .services-list li{
     float: left;
     margin-top: 10px;
@@ -396,4 +477,101 @@ box-shadow: 0px 4px 0px 0px rgba(117,136,54,1);
     border: 0;
     background-color: rgb(239, 239, 239);
     border-radius: 6px;
+}
+
+
+/*------------------------------------
+                CONTACTO
+-------------------------------------*/
+
+.hero-contact{
+    background-image: url('/images/contacto/banner.jpg')
+}
+
+.contact-info-item{
+    text-align: center;
+}
+
+.contact-info-title{
+    color: #9fe31f;
+    font-size: 25px
+}
+.contact-info-title span{
+    font-size: 10px
+}
+
+.contact-info-desc{
+    font-size: 12px;
+    color: #2f2f2f
+}
+
+.contact-form{
+    margin-top: 40px;
+}
+
+.contact-form-item + .contact-form-item{
+    margin-top: 30px;
+}
+
+.contact-form-input,.contact-form-textarea{
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+}
+
+.contact-form-label{
+    font-size: 17px;    
+    font-weight: 200;
+    color: #151515
+}
+
+.contact-form-input{
+    height: 42px; 
+    
+}
+
+.contact-form-textarea{
+    height: 150px
+}
+
+.contact-form-send{
+    margin: 20px auto 0 auto;
+    display: block;
+    padding: 8px 20px;
+    font-size: 16px;
+    color: #2e2e2e;
+    border: 0;
+    background-color: rgb(239, 239, 239);
+    border-radius: 6px;
+}
+
+.contact-links-item:first-of-type{
+    background-image: url('/images/contacto/side-1.jpg')
+}
+
+.contact-links-item:last-of-type{
+    background-image: url('/images/contacto/side-2.jpg')
+}
+
+.contact-links-item{
+    height: 230px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 35px;
+}
+
+.contact-links-container{
+    position: absolute;
+    bottom: 30px
+}
+
+.contact-links-item-title,.contact-links-item-text{
+    color: white
+    
+}
+
+.contact-links-item-title{
+    font-weight: 800;
+    font-size: 28px
 }
