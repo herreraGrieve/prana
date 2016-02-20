@@ -175,6 +175,7 @@ box-shadow: 0px 4px 0px 0px rgba(117,136,54,1);
     margin-bottom: 90px;
     background-position: center;
     padding-left: 50px;
+    background-size: cover
 }
 
 .hero-caption{
@@ -297,6 +298,10 @@ box-shadow: 0px 4px 0px 0px rgba(117,136,54,1);
 /*------------------------------------
             QUE OFRECEMOS
 -------------------------------------*/
+.serviceContainer{
+    margin: 0 auto 0 auto!important;
+    max-width: 1200px
+}
 .hero-services{
     background-image: url('/images/servicios/ofrecemos.jpg');
 }
@@ -342,4 +347,53 @@ box-shadow: 0px 4px 0px 0px rgba(117,136,54,1);
 
 .services-list li + li{
     margin-left: 3%
+}
+
+/*------------------------------------
+                RRHH
+-------------------------------------*/
+.hero-rrhh{
+    background-image: url('/images/servicios/rrhh.jpg')
+}
+
+.service-form{
+    padding: 20px;
+    background-color:  #bdbab9;
+    border-radius: 10px;
+    
+}
+
+.service-contact-title,.service-contact-subtitle{
+    color: white
+}
+
+.service-contact-title{
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase
+}
+
+.service-contact-subtitle{
+    font-size: 15px
+}
+
+.service-form-input{
+    width: 100%;
+    border-radius: 6px;
+    border: 0;
+    padding: 5px 10px
+}
+.service-form-input + .service-form-input{
+    margin-top: 8px;
+}
+
+.service-form-submit{
+    margin: 20px auto 0 auto;
+    display: block;
+    padding: 8px 20px;
+    font-size: 16px;
+    color: #2e2e2e;
+    border: 0;
+    background-color: rgb(239, 239, 239);
+    border-radius: 6px;
 }
