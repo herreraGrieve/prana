@@ -1,7 +1,7 @@
 <?php
 
 $EmailFrom = "example@gmail.com";
-$EmailTo = "pedro-hg@outlook.com";
+$EmailTo = "example@outlook.com";
 $Subject = "Reserva de cita";
 $Name = Trim(stripslashes($_POST['nombre'])); 
 $Email = Trim(stripslashes($_POST['mail'])); 
@@ -26,7 +26,7 @@ $Body .= "\n";
 $Body .= "Email / direccion: ";
 $Body .= $Email;
 $Body .= "\n";
-$Body .= "Mensaje: ";
+$Body .= "Codigo Zip: ";
 $Body .= $zip;
 $Body .= "\n";
 

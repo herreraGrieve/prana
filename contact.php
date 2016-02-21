@@ -1,7 +1,7 @@
 <?php
 
 $EmailFrom = "example@gmail.com";
-$EmailTo = "pedro-hg@outlook.com";
+$EmailTo = "example@outlook.com";
 $Subject = "Mensaje enviado desde pagina de contacto";
 $Name = Trim(stripslashes($_POST['nombre'])); 
 $Email = Trim(stripslashes($_POST['mail'])); 
