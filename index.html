@@ -16,22 +16,27 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-            <a class="navbar-brand" href="#"><img src="images/logo-prin.jpg" class="logo"></a>
+            <a class="navbar-brand" href="/"><img src="images/logo-prin.jpg" class="logo"></a>
           <div class="limpiar"></div>
         </div>
         <div class="collapse navbar-collapse" id="navbar-ex-collapse">
           <ul class="nav navbar-nav navbar-right" id="navegacion">
             <li class="active">
-              <a href="/quienes-somos.html">QUIENES SOMOS</a>
+              <a href="/">QUIENES SOMOS</a>
             </li>
             <li>
-              <a href="/nuestro-equipo.html">NUESTRO EQUIPO</a>
+              <a href="/quienes-somos.html">NUESTRO EQUIPO</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >SERVICIOS</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/servicios-queofrecemos.html">Que ofrecemos</a></li>
+                    <li><a href="/servicios-talleres.html">Talleres</a></li>
+                    <li><a href="/servicios-recursoshumanos.html">Recursos Humanos</a></li>
+                </ul>
             </li>
             <li>
-              <a href="/servicios-queofrecemos.html">SERVICIOS</a>
-            </li>
-            <li>
-              <a href="/clientes.html">NUESTROS CLIENTES</a>
+              <a href="/nuestrosclientes.html">NUESTROS CLIENTES</a>
             </li>
             <li>
               <a href="/contacto.html">CONTACTO</a>
@@ -47,9 +52,9 @@
             <h1>La vida te trae exactamente<br/>lo que necesitas para crecer.</h1>
             <div class="container">
               <div class="row">
-                <div class="col-md-12">
-                  <a class="btn btn-primary boton">Escribenos</a>
-                  <a class="btn btn-primary boton">Enterate sobre nosotros</a>
+                <div class="col-md-12 homeHeroButtons">
+                  <a class="button button--green" href="contacto.html"><span class="button--icon"></span>Escribenos</a>
+                  <a class="button button--green" href="quienes-somos.html"><span class="button--icon"></span>Enterate <span class="homeHeroButtons-span">sobre nosotros</span></a>
                 </div>
               </div>
             </div>
@@ -72,7 +77,7 @@ Contamos con un conjunto de profesionales altamente capacitados cuya finalidad e
     <div class="section mision-vision" id="mision-vision">
       <div class="container">
         <div class="row">
-          <div class="col-md-6" id="vision">
+          <div class="col-md-6 pie-clearfix" id="vision">
             <img src="images/mision-ico.png" class="mision-vision-img">
             <p><span>Nuestra Visión</span> ser un centro psicológico líder en el mercado, brindando un servicio de asesoría diferenciada con responsabilidad y compromiso, teniendo como valores: Honestidad, responsabilidd, confidencialidad, respeto y compromiso.
 </p>
@@ -111,10 +116,10 @@ Contamos con un conjunto de profesionales altamente capacitados cuya finalidad e
         </div>
       </div>
     </div>
-    <footer class="section section-primary" id="piepagina">
+    <footer class="section footer section-primary" id="piepagina">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8">
+          <div class="col-sm-12 col-md-8">
               <ul class="footer-nav">
                 <li class="active">
                   <a href="/quienes-somos.html">QUIENES SOMOS</a>
@@ -133,9 +138,15 @@ Contamos con un conjunto de profesionales altamente capacitados cuya finalidad e
                 </li>
               </ul>
           </div>
-          <div class="col-sm-4">
-            <a>
-                <img src="images/">
+          <div class="col-sm-12 col-md-4 pie-clearfix">
+            <a href="#" class="footer-share-item">
+                <img src="images/fb2.jpg">
+            </a>
+            <a href="#" class="footer-share-item">
+                <img src="images/yt.jpg">
+            </a>
+            <a href="mailto:consultas@centropsicologicoprana.com" class="footer-share-item">
+                <img src="images/mail.jpg">
             </a>
           </div>
         </div>
