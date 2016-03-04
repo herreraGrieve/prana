@@ -3,8 +3,8 @@
 }
 .logo{
     position:  relative;
-    width: 144px;
-    top: -15px;
+    width: 165px;
+    top: -6px;
 }
 #cabecera{
     height: 150px;
@@ -101,8 +101,9 @@
 }
 
 #banner-prin{
-	background: url(../images/home-banner.png) no-repeat ;
+	background: url(../images/home-banner.jpg) no-repeat center fixed;
 	background-size: cover;
+    padding: 70px 0;
 
 }
 
@@ -355,6 +356,16 @@ box-shadow: 0px 4px 0px 0px rgba(117,136,54,1);
     }
     .hero-title{
         font-size: 35px
+    }
+    #banner-prin{
+        background-attachment: initial;
+        
+    }
+    #banner-prin h1{
+        font-size: 2.5em;
+    }
+    .homeHeroButtons .button{
+        margin-top: 10px;
     }
 }
 
